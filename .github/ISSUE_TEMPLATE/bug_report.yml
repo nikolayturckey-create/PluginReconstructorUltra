@@ -1,0 +1,43 @@
+name: Bug report
+description: Сообщить об ошибке декомпиляции или интерфейса
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что произошло?
+      description: Опишите ожидаемое и фактическое поведение.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия Plugin Reconstructor Ultra
+      placeholder: 0.2.0
+    validations:
+      required: true
+  - type: input
+    id: java
+    attributes:
+      label: Java version
+      placeholder: Java 21
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: ОС
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи / MISSING_SOURCES.txt
+      description: Не прикладывайте чужой закрытый JAR, если у вас нет разрешения на публикацию.
+      render: text

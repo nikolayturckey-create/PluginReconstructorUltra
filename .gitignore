@@ -1,0 +1,22 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Java build output
+build/
+out/
+target/
+*.class
+
+# Local decompiler cache/tools
+tools/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Recovery output created by the app
+Recovered_*/
+recovery-output/
